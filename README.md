@@ -1,5 +1,20 @@
 # String Class Implementation (with a few example methods)
 
+Extending the String class in Javascript.
+
+Using Prototype Oriented Programming, methods, procedures and instance attributes are added to the String class to support more string manipulation features.
+
+Methods that have been added:
+- hasVowels
+- toUpper
+- toLower
+- ucFirst
+- isQuestion
+- words
+- wordCount
+- toCurrency
+- fromCurrency
+
 ### To run the tests
 Chrome does not allow loading of other files, in this case the JSON file to be read while viewing an HTML file loaded directly to the browser from a file explorer.You are required to start up a static server.
 
@@ -9,32 +24,7 @@ Enter the following command in your Terminal, to spurn up a static file server u
 $ python -m SimpleHTTPServer 1515
 ```
 
-Then open the following link or click: [http://localhost:1515/jasmine/SpecRunner.html](http://localhost:1515/jasmine/SpecRunner.html)
-
-or:
-
-install jasmine node.js package to run the tests via the terminal.
-
-```bash
-$ npm install -g jasmine-node
-```
-
-You may have to use `sudo` if permissio rights errors pop up while in the installation process.
-
-then `cd` into the project's root folder if you are not already in there. And run:
-
-```bash
-$ jasmine-node
-```
-
-If all tests should pass, you shall see this:
-
-```bash
-........
-
-Finished in 0.009 seconds
-8 test, 15 assertion, 0 failures, 0 skipped
-```
+Then open the following link or click: [http://localhost:1515/tests/SpecRunner.html](http://localhost:1515/tests/SpecRunner.html)
 
 ---
 

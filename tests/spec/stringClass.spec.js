@@ -42,7 +42,7 @@ describe('String class additional methods implementation', function() {
 
     it('spaces/symbolic characters should be preserved/kept', function() {
       // matches any non-character or non-digit character.
-      expect(/[^\w\s]{1,}/g.test('Fluer Dela\'Cour (Co-operation)'.toUpper())).toBe(true);
+      expect('Fluer Dela\'Cour (Co-operation)'.toUpper()).toMatch(/[^\w\s]{1,}/);
     });
 
   });
@@ -62,7 +62,7 @@ describe('String class additional methods implementation', function() {
 
     it('spaces/symbolic characters should be preserved/kept', function() {
       // matches any non-character or non-digit character.
-      expect(/[^\w\s]{1,}/g.test('Fluer Dela\'Cour (Co-operation)'.toUpper())).toBe(true);
+      expect('Fluer Dela\'Cour (Co-operation)'.toLower()).toMatch(/[^\w\s]{1,}/);
     });
 
   });

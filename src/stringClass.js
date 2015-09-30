@@ -130,8 +130,7 @@ String.prototype.words = function() {
 // wordCount returns the number of words in the string.
 String.prototype.wordCount = function() {
   // get all the words in the array then get the length of the array
-  var words = this.words();
-  return words.length;
+  return this.words().length;
 };
 
 // toCurrency returns a currency representation of the String
@@ -177,10 +176,10 @@ String.prototype.toCurrency = function() {
       return [currencyRepresentation, '.', theFloatingPoint].join('');
     }
     return currencyRepresentation;
-  } else {
-    // if not just return it as it is
-    return integerString;
   }
+
+  // if not just return it as it is
+  return integerString;
 };
 
 // fromCurrency returns a number representation of the Currency String
